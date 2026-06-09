@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="apple-touch-icon" th:href="@{/favicon.png}"/>    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Emmanuel Okwuosa</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Google Fonts: Playfair Display + Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+    <link th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#hero">Emmanuel Okwuosa</a>
+        <button class="navbar-toggler border-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                style="filter: invert(1);">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="hero-eyebrow">Welcome to my portfolio</p>
+                <h1 class="hero-name">Emmanuel <span>Okwuosa</span></h1>
+                <p class="hero-title">Software Engineer &nbsp;·&nbsp; Full Stack Developer</p>
+                <div class="hero-divider"></div>
+                <p class="hero-tagline">
+                    I build clean, scalable web applications with a focus on
+                    thoughtful architecture and great user experience.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-gold">View My Work</a>
+                    <a href="#contact" class="btn btn-outline-gold">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about">
+    <div class="container">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-rule"></div>
+        <div class="row align-items-center g-5">
+
+            <!-- Image column first (left side) -->
+            <div class="col-lg-5">
+
+
+                <div class="photo-frame">
+                    <div class="photo-frame-border"></div>
+                    <img th:src="@{/images/about_pfp.jpg}"
+                         alt="Profile Photo"
+                         style="width: 100%;"/>
+                </div>
+
+            </div>
+
+            <!-- Bio text second (right side) -->
+            <div class="col-lg-7">
+                <div class="terminal-box">
+                    <span class="terminal-label">whoami</span>
+                    <p class="about-text">
+                    I'm Emmanuel — a Computer Science student at the University of Houston,
+                    who is passionate about building software that is both functional and impactful.
+                    I develop full-stack applications and web experiences that solve real problems.
+
+                    I enjoy learning new technologies and building software that is reliable and easy to use.
+                    Regardless of the project I take pride in creating solutions that are both effective and thoughtfully designed.
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════ -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-rule"></div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <p class="skill-category-title">Languages</p>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">HTML/CSS</span>
+
+
+
+            </div>
+            <div class="col-md-4">
+                <p class="skill-category-title">Frameworks</p>
+                <span class="skill-badge">Spring Boot</span>
+                <span class="skill-badge">Spring MVC</span>
+                <span class="skill-badge">Thymeleaf</span>
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">Flask</span>
+            </div>
+            <div class="col-md-4">
+                <p class="skill-category-title">Tools & Platforms</p>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">IntelliJ</span>
+                <span class="skill-badge">VSCode</span>
+                <span class="skill-badge">Windows</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Node</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════ -->
+<section id="projects">
+    <div class="container">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4" th:each="project, iterStat : ${projects}">
+                <div class="project-card card">
+
+                    <div class="project-number" th:text="${'0' + iterStat.count}">01</div>
+                    <div class="project-image">
+                        <img th:src="@{/images/} + ${project.previewImage}"
+                             th:if="${project.previewImage != null}"
+                             alt="Project Preview"/>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <span class="tech-tag" th:text="${project.techStack}">Tech Stack</span>
+                        </div>
+                        <div class="card-title" th:text="${project.title}">Project Title</div>
+                        <p class="card-text" th:text="${project.description}">Description</p>
+                        <div class="project-links">
+                            <a th:href="${project.githubUrl}" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a th:if="${project.liveUrl != null}"
+                               th:href="${project.liveUrl}" target="_blank">
+                                <i class="bi bi-box-arrow-up-right"></i> View Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12" th:if="${#lists.isEmpty(projects)}">
+                <p class="text-muted fst-italic">Projects coming soon.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EXPERIENCE (Coming Soon)
+════════════════════════════════════════════ -->
+
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact">
+    <div class="container">
+        <p class="section-label" style="color: var(--gold);">Let's Talk</p>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-rule"></div>
+        <div class="row g-5">
+
+            <!-- Left side: Form -->
+            <div class="col-lg-7">
+                <form th:action="@{/contact}" th:object="${message}" method="post">
+
+                    <div class="contact-field">
+                        <label class="contact-label">YOUR NAME</label>
+                        <input type="text" th:field="*{name}" placeholder="John Doe" class="contact-input"/>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label">EMAIL ADDRESS</label>
+                        <input type="email" th:field="*{email}" placeholder="john@example.com" class="contact-input"/>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label">SUBJECT</label>
+                        <input type="text" th:field="*{subject}" placeholder="Web App, Collaboration..." class="contact-input"/>
+                    </div>
+
+                    <div class="contact-field">
+                        <label class="contact-label">MESSAGE</label>
+                        <textarea th:field="*{message}" placeholder="What's on your mind?" class="contact-input contact-textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold mt-3">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right side: Connect card -->
+            <div class="col-lg-4 offset-lg-1">
+                <div class="connect-card">
+                    <p class="connect-title">CONNECT</p>
+                    <a href="https://mail.google.com/mail/?view=cm&to=okwuosaemmauel211@gmail.com" target="_blank" class="contact-link">
+                        <i class="bi bi-envelope-fill"></i>
+                        okwuosaemmauel211@gmail.com
+                    </a>
+                    <a href="https://github.com/Emman0-21" target="_blank" class="contact-link">
+                        <i class="bi bi-github"></i>
+                        @Emman0-21
+                    </a>
+                    <a href="https://www.linkedin.com/in/emmanuel-okwuosa/" target="_blank" class="contact-link">
+                        <i class="bi bi-linkedin"></i>
+                        linkedin.com/in/emmanuel-okwuosa
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+    <p>&copy; 2025 Emmanuel Okwuosa &nbsp;·&nbsp; Built with Spring Boot &amp; Thymeleaf</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Cursor -->
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<script>
+    const ring = document.getElementById('cursor-ring');
+
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+    const speed = 0.12; // lower = more lag, higher = less lag
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    function animate() {
+        ringX += (mouseX - ringX) * speed;
+        ringY += (mouseY - ringY) * speed;
+
+        ring.style.left = ringX + 'px';
+        ring.style.top = ringY + 'px';
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            ring.style.width = '55px';
+            ring.style.height = '55px';
+        });
+        el.addEventListener('mouseleave', () => {
+            ring.style.width = '40px';
+            ring.style.height = '40px';
+        });
+    });
+</script>
+</body>
+</html>
