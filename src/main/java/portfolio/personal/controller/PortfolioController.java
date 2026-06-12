@@ -46,6 +46,7 @@ public class PortfolioController {
             System.out.println("Error: " + e.getMessage());
             redirectAttributes.addFlashAttribute("messageError", true);
         }
+        redirectAttributes.addFlashAttribute("message", new Message());
         return "redirect:/";
     }
 
