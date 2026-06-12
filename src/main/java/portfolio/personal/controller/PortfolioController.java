@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import  java.util.List;
 
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import java.io.IOException;
 import portfolio.personal.model.Experience;
 import portfolio.personal.model.Message;
 import portfolio.personal.model.Project;
@@ -42,7 +43,7 @@ public class PortfolioController {
         try {
             mailService.sendMessage(message);
             redirectAttributes.addFlashAttribute("messageSent", true);
-        } catch (Exception e){
+        } catch (IOException e){
             System.out.println("Error: " + e.getMessage());
             redirectAttributes.addFlashAttribute("messageError", true);
         }
