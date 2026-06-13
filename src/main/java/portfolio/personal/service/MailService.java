@@ -15,7 +15,7 @@ public class MailService {
     private final String apiKey = System.getenv("SENDGRID_API_KEY");
 
     public void sendMessage(Message message) throws IOException {
-        Email from = new Email("okwuosaemmanuel211@gmail.com");
+        Email from = new Email("noreply@emmanuelokwuosa.dev");
         Email to = new Email("okwuosaemmanuel211@gmail.com");
         String subject = message.getSubject();
         Content content = new Content("text/plain",
